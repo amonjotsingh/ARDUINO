@@ -1,0 +1,2 @@
+//When you open the arduino IDE software you should be able to see  void setup(){} and void loop(){} first one 
+// will be to configure up pins and second one is to write program
