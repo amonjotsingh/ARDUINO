@@ -1,11 +1,7 @@
-// C++ code
-//
-/*
-  This program blinks pin 13 of the Arduino (the
-  built-in LED)
-*/
+
 int readpin = A3;
 int vol = 0;
+float V ;
 
 void setup()
 {
@@ -16,6 +12,7 @@ void setup()
 void loop()
 {
   vol = analogRead(readpin);
-    Serial.println(vol);
+  V = (vol*5.)/1023.;
+  Serial.println(V);
     delay(500);
 }
